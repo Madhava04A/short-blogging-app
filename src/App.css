@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.article {
+  width: 100%;
+  padding: 0 0.5rem;
+  border-bottom: 2px solid #252525;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.dateTime {
+  font-size: 1.25rem;
+  font-weight: 550;
+  align-self: flex-end;
+}
+.article .Title {
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+}
+.postText {
+  width: 50%;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+.postLink:any-link {
+  text-decoration: none;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 750px) {
+  .postText {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    padding-bottom: 0.75rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* ///////////////////////// postpage styles //////////////////////////  */
+
+.postPg {
+  width: 100%;
+}
+.postHolder {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.postTitle {
+  width: 45%;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.postTime {
+  width: 45%;
+  word-spacing: 4px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.postBody {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  text-align: center;
+}
+.link-delete-btn {
+  margin: 2rem auto;
+  padding: 0.5rem;
+  width: 6rem;
+}
+.deleteBtn {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 6rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 0, 0, 0.822);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  box-shadow: 2px 2px 2px 2px rgb(83, 11, 11);
+}
+.deleteBtn:hover {
+  box-shadow: 3px 2px 3px 2px rgb(122, 45, 45);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .postTitle {
+    width: 45%;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-wrap: wrap;
   }
 }

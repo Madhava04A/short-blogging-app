@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.newpost {
+  width: 100%;
+  padding: 1rem;
+}
+.addPost {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.labeltitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#addTitle {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+.labelbody {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+#addBody {
+  width: 70%;
+  min-height: 12rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.submitBtn {
+  width: 6rem;
+  height: 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: white;
+  background-color: #252525;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 2px rgba(66, 66, 66, 0.781);
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.781);
+}
+
+/*   responsive design code     */
+
+@media screen and (max-width: 750px) {
+  #addBody,
+  #addTitle {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .submitBtn {
+    width: 7rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
